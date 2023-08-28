@@ -1,4 +1,4 @@
-# # Python - Variable Annotations
+# Python - Variable Annotations
 ![Python Version](https://img.shields.io/badge/python-3.10-blue.svg)   	 ![Code Style](https://img.shields.io/badge/code%20style-PEP8-brightgreen.svg)
 
 ## Project Overview
