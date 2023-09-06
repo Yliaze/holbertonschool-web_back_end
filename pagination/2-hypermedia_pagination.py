@@ -2,7 +2,7 @@
 """Function index_range, class Server"""
 import csv
 import math
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -46,7 +46,7 @@ class Server:
 
         return dataset[start_index:end_index]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Returns a dictionary containing key-value pairs"""
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
