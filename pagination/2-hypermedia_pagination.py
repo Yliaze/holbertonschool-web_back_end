@@ -58,7 +58,7 @@ class Server:
         dataset_page = self.get_page(page, page_size)
 
         """Number of the next page"""
-        if start_index >= len(dataset):
+        if start_index >= len(dataset) or end_index >= len(dataset):
             next_page = None
         else:
             next_page = page + 1
