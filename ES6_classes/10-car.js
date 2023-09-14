@@ -4,9 +4,9 @@ export default class Car {
       const motorSymbol = Symbol('motor');
       const colorSymbol = Symbol('color');
   
-      this[brandSymbol] = brand;
-      this[motorSymbol] = motor;
-      this[colorSymbol] = color;
+      this._brand = brand;
+      this._motor = motor;
+      this._color = color;
   
       // Make the symbols private
       Object.freeze(this);
