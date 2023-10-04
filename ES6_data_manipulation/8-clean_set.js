@@ -10,6 +10,9 @@ export default function cleanSet(set, startString) {
     }
   }
 
-  result = result.slice(0, -1);
+  if (result.endsWith('-')) {
+    result = result.slice(0, -1);
+  }
+
   return result;
 }
