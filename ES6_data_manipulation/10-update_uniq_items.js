@@ -5,6 +5,7 @@ export default function updateUniqueItems(groceriesMap) {
         groceriesMap.set(key, 100);
       }
     });
+    return groceriesMap;
   }
-  return 'Cannot process';
+  throw new Error('Cannot process');
 }
