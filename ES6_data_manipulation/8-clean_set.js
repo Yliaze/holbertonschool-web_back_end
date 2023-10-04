@@ -10,10 +10,6 @@ export default function cleanSet(set, startString) {
     }
   }
 
-  result = result.slice(0, -1); // Enlève le dernier "-"
-  if (result.endsWith('-')) {
-    result = result.slice(0, -1); // Enlève encore le dernier "-"
-  }
-
+  result = result.slice(0, -1);
   return result;
 }
